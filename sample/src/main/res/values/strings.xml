@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Aho-Corasick Android Demo</string>
+    <string name="title_sensitive_detection">高性能多模式敏感词匹配</string>
+    <string name="btn_contains">检测是否存在 (Contains)</string>
+    <string name="btn_scan_all">全量扫描 (Scan ALL)</string>
+    <string name="btn_tokenize">最长优先高亮 (Tokenize)</string>
+    <string name="btn_reload_assets">从 Assets 秒级加载快照</string>
+    <string name="btn_hot_update">动态热更新词库 (Hot-Swap)</string>
+    <string name="btn_concurrency_stress">⚡ 启动超高并发压测 (Stress Test)</string>
+    <string name="hint_input">请输入待匹配文本，如：请不要在非法平台参与赌博或者博彩，支持微信支付快捷退款！</string>
+</resources>

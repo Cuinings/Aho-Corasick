@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_sensitive_detection"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F0F0F0"
+            android:padding="8dp"
+            android:textSize="12sp"
+            android:fontFamily="monospace"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_input"
+            android:minLines="3"
+            android:gravity="top|start"
+            android:background="@android:drawable/editbox_background"
+            android:padding="8dp"
+            android:layout_marginBottom="12dp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/btnContains"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="@string/btn_contains" />
+
+            <Button
+                android:id="@+id/btnScanAll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="@string/btn_scan_all" />
+
+            <Button
+                android:id="@+id/btnTokenize"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="@string/btn_tokenize" />
+
+            <Button
+                android:id="@+id/btnHotUpdate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="@string/btn_hot_update" />
+        </GridLayout>
+
+        <Button
+            android:id="@+id/btnReloadAssets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/btn_reload_assets" />
+
+        <Button
+            android:id="@+id/btnConcurrencyStress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="@string/btn_concurrency_stress" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运行状态 / 耗时:"
+            android:textStyle="bold"
+            android:layout_marginBottom="6dp" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="80dp"
+            android:background="#EFEBE9"
+            android:padding="12dp"
+            android:textSize="15sp"
+            android:lineSpacingMultiplier="1.2" />
+
+    </LinearLayout>
+</ScrollView>
