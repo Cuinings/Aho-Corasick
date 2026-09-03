@@ -4,6 +4,8 @@ on:
   push:
     tags:
       - 'v*' # 只有推送类似 v1.0.0, v1.2 等 tag 时才会触发
+  release:
+    types: [created]
   workflow_dispatch:
 
 jobs:
