@@ -23,14 +23,13 @@ afterEvaluate {
                 // 优先读取 Actions 的环境变量，若在本地则读取 gradle.properties 中的 gpr.ac.repo / gpr.repo，没有则默认 Cuinings/Aho-Corasick
                 val githubRepo = System.getenv("GITHUB_REPOSITORY")
                     ?: project.findProperty("gpr.ac.repo") as String?
-                    ?: project.findProperty("gpr.repo") as String?
                     ?: "Cuinings/Aho-Corasick"
 
                 url = uri("https://maven.pkg.github.com/$githubRepo")
                 credentials {
                     // 读取 Actions 自动注入的环境变量，或本地 gradle.properties 中配置的属性
-                    username = System.getenv("GITHUB_ACTOR") ?: project.findProperty("gpr.ac.user") as String? ?: project.findProperty("gpr.user") as String? ?: ""
-                    password = System.getenv("GITHUB_TOKEN") ?: project.findProperty("gpr.ac.key") as String? ?: project.findProperty("gpr.key") as String? ?: ""
+                    username = System.getenv("GITHUB_ACTOR") ?: project.findProperty("gpr.user") as String? ?: ""
+                    password = System.getenv("GITHUB_TOKEN") ?: project.findProperty("gpr.key") as String? ?: ""
                 }
             }
         }

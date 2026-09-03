@@ -43,7 +43,8 @@ captures/
 .cxx/
 
 # Local Maven Repository output
-/local-maven/
+local-maven/
+*/local-maven/
 
 # OS files
 .DS_Store
